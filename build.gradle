@@ -265,7 +265,7 @@ android {
 
         buildConfigField "long", "BUILD_TIMESTAMP", getLastCommitTimestamp() + "L"
         buildConfigField "String", "SIGNAL_URL", "\"https://wooz.ml\""
-        buildConfigField "String", "SIGNAL_CDN_URL", "\"\""
+        buildConfigField "String", "SIGNAL_CDN_URL", "\"https://wooz.ml\""
         buildConfigField "String", "SIGNAL_SERVICE_STATUS_URL", "\"\""
         buildConfigField "String", "GIPHY_PROXY_HOST", "\"\""
         buildConfigField "int", "GIPHY_PROXY_PORT", "80"
