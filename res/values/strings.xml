@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Signal</string>
+    <string name="app_name">Flash</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
     <string name="delete">Delete</string>
@@ -385,7 +385,7 @@
     <string name="MessageDetailsRecipient_new_safety_number">New safety number</string>
 
     <!-- MessageRetrievalService -->
-    <string name="MessageRetrievalService_signal">Signal</string>
+    <string name="MessageRetrievalService_signal">Flash</string>
     <string name="MessageRetrievalService_background_connection_enabled">Background connection enabled</string>
 
     <!-- MmsDownloader -->
