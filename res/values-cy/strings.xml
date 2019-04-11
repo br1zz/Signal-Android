@@ -466,7 +466,7 @@ Send neges heb ei ddiogelu?</string>
   <string name="RecipientPreferenceActivity_block_this_contact_question">Rhwystro\'r cysllwt hwn?</string>
   <string name="RecipientPreferenceActivity_you_will_no_longer_receive_messages_and_calls_from_this_contact">Ni fyddwch bellach yn derbyn negeseuon a galwadau o\'r cyswllt hwn.</string>
   <string name="RecipientPreferenceActivity_block_and_leave_group">Rhwystro a gadael y grŵp hwn?</string>
-  <string name="RecipientPreferenceActivity_block_group">Rhwystro\\'r grŵp hwn?</string>
+  <string name="RecipientPreferenceActivity_block_group">Rhwystro\'r grŵp hwn?</string>
   <string name="RecipientPreferenceActivity_block">Rhwystro</string>
   <string name="RecipientPreferenceActivity_unblock_this_contact_question">Dadrwystro\'r cyswllt hwn?</string>
   <string name="RecipientPreferenceActivity_you_will_once_again_be_able_to_receive_messages_and_calls_from_this_contact">Byddwch unwaith eto yn gallu derbyn negeseuon a galwadau o\'r cyswllt hwn.</string>
