@@ -157,7 +157,7 @@ public class PushMediaSendJob extends PushSendJob implements InjectableType {
     }
 
     try {
-      rotateSenderCertificateIfNecessary();
+      //rotateSenderCertificateIfNecessary();
 
       SignalServiceAddress                     address           = getPushAddress(message.getRecipient().getAddress());
       MediaConstraints                         mediaConstraints  = MediaConstraints.getPushMediaConstraints();
