@@ -308,7 +308,7 @@ android {
         buildConfigField "String", "SIGNAL_URL", "\"https://flash-messenger.ml\""
         buildConfigField "String", "SIGNAL_CDN_URL", "\"https://flash-messenger.ml\""
         buildConfigField "String", "SIGNAL_SERVICE_STATUS_URL", "\"\""
-        buildConfigField "String", "GIPHY_PROXY_HOST", "\"\""
+        buildConfigField "String", "CONTENT_PROXY_HOST", "\"\""
         buildConfigField "String", "SIGNAL_CONTACT_DISCOVERY_URL", "\"\""
         buildConfigField "int", "CONTENT_PROXY_PORT", "443"
         buildConfigField "String", "USER_AGENT", "\"OWA\""
