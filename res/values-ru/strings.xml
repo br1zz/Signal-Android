@@ -265,7 +265,7 @@
   <string name="CreateProfileActivity_too_long">Слишком длинно</string>
   <string name="CreateProfileActivity_profile_name">Имя профиля</string>
   <string name="CreateProfileActivity_set_up_your_profile">Настройте ваш профиль</string>
-  <string name="CreateProfileActivity_signal_profiles_are_end_to_end_encrypted">Профили Signal всегда защищены сквозным шифрованием, и сервис Signal никогда не имеет доступ к этой информации.</string>
+  <string name="CreateProfileActivity_signal_profiles_are_end_to_end_encrypted">Профили Flash всегда защищены сквозным шифрованием, и сервис Flash никогда не имеет доступ к этой информации.</string>
   <!--CustomDefaultPreference-->
   <string name="CustomDefaultPreference_using_custom">Пользовательское: %s</string>
   <string name="CustomDefaultPreference_using_default">По умолчанию: %s</string>
