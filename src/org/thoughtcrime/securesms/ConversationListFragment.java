@@ -212,8 +212,6 @@ public class ConversationListFragment extends Fragment
           return Optional.of((new SystemSmsImportReminder(context)));
         } else if (PushRegistrationReminder.isEligible(context)) {
           return Optional.of((new PushRegistrationReminder(context)));
-        } else if (ShareReminder.isEligible(context)) {
-          return Optional.of(new ShareReminder(context));
         } else if (DozeReminder.isEligible(context)) {
           return Optional.of(new DozeReminder(context));
         } else {

@@ -822,7 +822,7 @@ public class TextSecurePreferences {
   }
 
   public static boolean isShowInviteReminders(Context context) {
-    return getBooleanPreference(context, SHOW_INVITE_REMINDER_PREF, true);
+    return getBooleanPreference(context, SHOW_INVITE_REMINDER_PREF, false);
   }
 
   public static boolean isPassphraseTimeoutEnabled(Context context) {
