@@ -72,7 +72,6 @@ public class NewConversationActivity extends ContactSelectionActivity {
     case android.R.id.home:   super.onBackPressed(); return true;
     case R.id.menu_refresh:   handleManualRefresh(); return true;
     case R.id.menu_new_group: handleCreateGroup();   return true;
-    case R.id.menu_invite:    handleInvite();        return true;
     }
 
     return false;
