@@ -1304,8 +1304,8 @@
   <string name="LocalBackupJob_creating_backup">Создание резервной копии...</string>
   <string name="ProgressPreference_d_messages_so_far">еще %d сообщений</string>
   <string name="RegistrationActivity_please_enter_the_verification_code_sent_to_s">Пожалуйста, введите проверочный код, отправленный на %s.</string>
-  <string name="RegistrationActivity_wrong_number">Неправильный номер</string>
-  <string name="RegistrationActivity_call_me_instead_available_in">Позвоните мне вместо этого \n (Доступно через %02d:%02d)</string>
+  <string name="RegistrationActivity_wrong_number">Другой номер</string>
+  <string name="RegistrationActivity_call_me_instead_available_in">Звонок\n (%02d:%02d)</string>
   <string name="BackupUtil_never">Никогда</string>
   <string name="BackupUtil_unknown">Неизвестно</string>
   <string name="preferences_app_protection__screen_lock">Блокировка экрана</string>
