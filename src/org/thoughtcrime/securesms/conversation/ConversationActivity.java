@@ -402,6 +402,11 @@ public class ConversationActivity extends PassphraseRequiredActionBarActivity
   protected void onStart() {
     super.onStart();
     EventBus.getDefault().register(this);
+    if (recipient.getExpireMessages() == 0) {
+      DatabaseFactory.getRecipientDatabase(ConversationActivity.this).setExpireMessages(recipient, 86400);
+      OutgoingExpirationUpdateMessage outgoingMessage = new OutgoingExpirationUpdateMessage(getRecipient(), System.currentTimeMillis(), 86400 * 1000L);
+      MessageSender.send(ConversationActivity.this, outgoingMessage, threadId, false, null);
+    }
   }
 
   @Override
