@@ -974,7 +974,7 @@
   <string name="unknown_sender_view__add_to_contacts">ДОБАВИТЬ В КОНТАКТЫ</string>
   <string name="unknown_sender_view__don_t_add_but_make_my_profile_visible">НЕ ДОБАВЛЯТЬ, НО ОТКРЫТЬ МОЙ ПРОФИЛЬ</string>
   <!--verify_display_fragment-->
-  <string name="verify_display_fragment__if_you_wish_to_verify_the_security_of_your_end_to_end_encryption_with_s"><![CDATA[Если вы хотите убедиться в надежности шифрования с %s, сравните этот номер с номером на устройстве собеседника. Также вы можете сосканировать коды друг у друга. <a href="https://signal.org/redirect/safety-numbers">Подробнее.</a>]]></string>
+  <string name="verify_display_fragment__if_you_wish_to_verify_the_security_of_your_end_to_end_encryption_with_s"><![CDATA[Если вы хотите убедиться в надежности шифрования с %s, сравните этот номер с номером на устройстве собеседника. Также вы можете сосканировать коды друг у друга.]]></string>
   <string name="verify_display_fragment__tap_to_scan">Сканировать</string>
   <string name="verify_display_fragment__loading">Загрузка...</string>
   <string name="verify_display_fragment__verified">Подтверждён</string>
