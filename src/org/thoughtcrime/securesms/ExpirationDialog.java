@@ -66,11 +66,11 @@ public class ExpirationDialog extends AlertDialog {
     numberPickerView.setMaxValue(expirationTimes.length-1);
 
     NumberPickerView.OnValueChangeListener listener = (picker, oldVal, newVal) -> {
-      if (newVal == 0) {
-        textView.setText(R.string.ExpirationDialog_your_messages_will_not_expire);
-      } else {
+//      if (newVal < 2) {
+//        textView.setText(R.string.ExpirationDialog_your_messages_will_not_expire);
+//      } else {
         textView.setText(context.getString(R.string.ExpirationDialog_your_messages_will_disappear_s_after_they_have_been_seen, picker.getDisplayedValues()[newVal]));
-      }
+//      }
     };
 
     numberPickerView.setOnValueChangedListener(listener);
