@@ -14,7 +14,6 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.preference.CheckBoxPreference;
 import android.support.v7.preference.Preference;
-import org.thoughtcrime.securesms.logging.Log;
 import android.widget.Toast;
 
 import com.google.firebase.iid.FirebaseInstanceId;
@@ -25,6 +24,7 @@ import org.thoughtcrime.securesms.R;
 import org.thoughtcrime.securesms.RegistrationActivity;
 import org.thoughtcrime.securesms.contacts.ContactAccessor;
 import org.thoughtcrime.securesms.contacts.ContactIdentityManager;
+import org.thoughtcrime.securesms.logging.Log;
 import org.thoughtcrime.securesms.push.AccountManagerFactory;
 import org.thoughtcrime.securesms.util.TextSecurePreferences;
 import org.thoughtcrime.securesms.util.task.ProgressDialogAsyncTask;
@@ -48,9 +48,9 @@ public class AdvancedPreferenceFragment extends CorrectedPreferenceFragment {
 
     initializeIdentitySelection();
 
-    Preference submitDebugLog = this.findPreference(SUBMIT_DEBUG_LOG_PREF);
-    submitDebugLog.setOnPreferenceClickListener(new SubmitDebugLogListener());
-    submitDebugLog.setSummary(getVersion(getActivity()));
+//    Preference submitDebugLog = this.findPreference(SUBMIT_DEBUG_LOG_PREF);
+//    submitDebugLog.setOnPreferenceClickListener(new SubmitDebugLogListener());
+//    submitDebugLog.setSummary(getVersion(getActivity()));
   }
 
   @Override
