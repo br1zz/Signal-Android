@@ -2,7 +2,6 @@ package org.thoughtcrime.securesms.registration;
 
 import android.Manifest;
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 
@@ -18,7 +17,7 @@ public class WelcomeActivity extends BaseActionBarActivity {
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.registration_welcome_activity);
-    findViewById(R.id.welcome_terms_button).setOnClickListener(v -> onTermsClicked());
+//    findViewById(R.id.welcome_terms_button).setOnClickListener(v -> onTermsClicked());
     findViewById(R.id.welcome_continue_button).setOnClickListener(v -> onContinueClicked());
   }
 
