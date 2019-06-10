@@ -4,13 +4,11 @@ import android.app.Activity;
 import android.app.KeyguardManager;
 import android.content.Context;
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.preference.CheckBoxPreference;
 import android.support.v7.preference.Preference;
-import android.view.View;
 import android.widget.Toast;
 
 import org.thoughtcrime.securesms.ApplicationContext;
@@ -22,7 +20,6 @@ import org.thoughtcrime.securesms.components.SwitchPreferenceCompat;
 import org.thoughtcrime.securesms.crypto.MasterSecretUtil;
 import org.thoughtcrime.securesms.dependencies.InjectableType;
 import org.thoughtcrime.securesms.jobs.MultiDeviceConfigurationUpdateJob;
-import org.thoughtcrime.securesms.jobs.MultiDeviceReadReceiptUpdateJob;
 import org.thoughtcrime.securesms.jobs.RefreshAttributesJob;
 import org.thoughtcrime.securesms.lock.RegistrationLockDialog;
 import org.thoughtcrime.securesms.service.KeyCachingService;
@@ -70,7 +67,7 @@ public class AppProtectionPreferenceFragment extends CorrectedPreferenceFragment
     this.findPreference(PREFERENCE_CATEGORY_BLOCKED).setOnPreferenceClickListener(new BlockedContactsClickListener());
     this.findPreference(TextSecurePreferences.SHOW_UNIDENTIFIED_DELIVERY_INDICATORS).setOnPreferenceChangeListener(new ShowUnidentifiedDeliveryIndicatorsChangedListener());
     this.findPreference(TextSecurePreferences.UNIVERSAL_UNIDENTIFIED_ACCESS).setOnPreferenceChangeListener(new UniversalUnidentifiedAccessChangedListener());
-    this.findPreference(PREFERENCE_UNIDENTIFIED_LEARN_MORE).setOnPreferenceClickListener(new UnidentifiedLearnMoreClickListener());
+    //this.findPreference(PREFERENCE_UNIDENTIFIED_LEARN_MORE).setOnPreferenceClickListener(new UnidentifiedLearnMoreClickListener());
     disablePassphrase.setOnPreferenceChangeListener(new DisablePassphraseClickListener());
 
     initializeVisibility();

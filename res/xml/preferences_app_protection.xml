@@ -94,9 +94,9 @@
             android:title="@string/preferences_communication__sealed_sender_allow_from_anyone"
             android:summary="@string/preferences_communication__sealed_sender_allow_from_anyone_description"/>
 
-        <Preference
-            android:key="pref_unidentified_learn_more"
-            android:layout="@layout/unidentified_delivery_learn_more" />
+        <!--<Preference-->
+            <!--android:key="pref_unidentified_learn_more"-->
+            <!--android:layout="@layout/unidentified_delivery_learn_more" />-->
 
     </PreferenceCategory>
 
