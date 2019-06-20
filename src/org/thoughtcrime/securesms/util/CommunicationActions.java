@@ -26,7 +26,7 @@ public class CommunicationActions {
 
   public static void startVoiceCall(@NonNull Activity activity, @NonNull Recipient recipient) {
     Permissions.with(activity)
-        .request(Manifest.permission.RECORD_AUDIO, Manifest.permission.CAMERA, Manifest.permission.CALL_PHONE)
+        .request(Manifest.permission.RECORD_AUDIO, Manifest.permission.CAMERA, Manifest.permission.CALL_PHONE, Manifest.permission.ANSWER_PHONE_CALLS)
         .ifNecessary()
         .withRationaleDialog(activity.getString(R.string.ConversationActivity_to_call_s_signal_needs_access_to_your_microphone_and_camera, recipient.toShortString()),
                              R.drawable.ic_mic_white_48dp,

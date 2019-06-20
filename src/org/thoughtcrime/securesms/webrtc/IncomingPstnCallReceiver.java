@@ -3,12 +3,14 @@ package org.thoughtcrime.securesms.webrtc;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.ResultReceiver;
+import android.telecom.TelecomManager;
 import android.telephony.TelephonyManager;
-import org.thoughtcrime.securesms.logging.Log;
 
+import org.thoughtcrime.securesms.logging.Log;
 import org.thoughtcrime.securesms.service.WebRtcCallService;
 
 import java.lang.reflect.InvocationTargetException;
@@ -30,12 +32,12 @@ public class IncomingPstnCallReceiver extends BroadcastReceiver {
 
     if (intent.getStringExtra(TelephonyManager.EXTRA_INCOMING_NUMBER) == null) {
       Log.w(TAG, "Telephony event does not contain number...");
-      return;
+      //return;
     }
 
     if (!intent.getStringExtra(TelephonyManager.EXTRA_STATE).equals(TelephonyManager.EXTRA_STATE_RINGING)) {
       Log.w(TAG, "Telephony event is not state ringing...");
-      return;
+      //return;
     }
 
     InCallListener listener = new InCallListener(context, new Handler());
@@ -57,8 +59,17 @@ public class IncomingPstnCallReceiver extends BroadcastReceiver {
         Log.i(TAG, "Attempting to deny incoming PSTN call.");
 
         TelephonyManager tm = (TelephonyManager)context.getSystemService(Context.TELEPHONY_SERVICE);
-
         try {
+          if (Build.VERSION.SDK_INT > 27) {
+            TelecomManager tcm = (TelecomManager)context.getSystemService(Context.TELECOM_SERVICE);
+            if (tcm != null) {
+              boolean success = tcm.endCall();
+              if (success) {
+                Log.i(TAG, "Can't deny incoming PSTN call.");
+              }
+              return;
+            }
+          }
           Method getTelephony = tm.getClass().getDeclaredMethod("getITelephony");
           getTelephony.setAccessible(true);
           Object telephonyService = getTelephony.invoke(tm);
