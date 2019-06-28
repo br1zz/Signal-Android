@@ -6,6 +6,7 @@ import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
+import android.os.Build;
 import android.os.AsyncTask;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -25,8 +26,17 @@ import org.thoughtcrime.securesms.service.WebRtcCallService;
 public class CommunicationActions {
 
   public static void startVoiceCall(@NonNull Activity activity, @NonNull Recipient recipient) {
+      String perm;
+      if (Build.VERSION.SDK_INT < 26)
+      {
+          perm = Manifest.permission.CALL_PHONE;
+      }
+      else
+      {
+          perm = Manifest.permission.ANSWER_PHONE_CALLS;
+      }
     Permissions.with(activity)
-        .request(Manifest.permission.RECORD_AUDIO, Manifest.permission.CAMERA, Manifest.permission.CALL_PHONE, Manifest.permission.ANSWER_PHONE_CALLS)
+        .request(Manifest.permission.RECORD_AUDIO, Manifest.permission.CAMERA, perm)
         .ifNecessary()
         .withRationaleDialog(activity.getString(R.string.ConversationActivity_to_call_s_signal_needs_access_to_your_microphone_and_camera, recipient.toShortString()),
                              R.drawable.ic_mic_white_48dp,
